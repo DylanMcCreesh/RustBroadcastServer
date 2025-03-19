@@ -21,11 +21,12 @@ For a client to connect, first ensure the server is currently running on localho
 
 When a client connects, a client_id is assigned to the client, matching the port from which they connect to port 8888.
 
-Upon connecting, clients will recieve a login acknowledgement (ex. ```LOGIN:{CLIENT_ID}``).
+Upon connecting, clients will recieve a login acknowledgement (ex. ```LOGIN:{CLIENT_ID}```).
 
 After sending a message, client will recieve a message acknowledgement (ex. ```ACK:MESSAGE```).
 
-After the server recieves a message from one client, all other clients will then recieve the message (ex. ```MESSAGE:{CLIENT_ID} {MESSAGE}```), where CLIENT_ID is the ID of the sender.
+After the server recieves a message from one client, all other clients will then recieve the message 
+(ex. ```MESSAGE:{CLIENT_ID} {MESSAGE}```), where CLIENT_ID is the ID of the sender.
 
 # Implementation Details
 
